@@ -1,0 +1,44 @@
+@import "colors";
+@import "fonts";
+
+body {
+  background-color: $backgroundColor;
+
+}
+.container{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.card {
+  background-color: $secondaryColor;
+  border-radius: 3px;
+  border-color: $primaryColorDK;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  p{
+    @include fuenteTexto(20px);
+  }
+  .cardbody{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+  }
+}
+
+nav{
+  background-color: $primaryColorDK;
+  a{
+    @include fuenteMenus(25px) ;
+  }
+}
+
+footer
+{
+  background-color: $primaryColorDK;
+  @include fuenteMenus(15px);
+  .container{
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}

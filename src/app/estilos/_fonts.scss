@@ -1,0 +1,20 @@
+@import 'colors';
+$titlesFont: 'Ysabeau', sans-serif;
+$menuFont:'Mulish', sans-serif;
+$textFont:'Roboto', sans-serif;
+
+@mixin fuenteTitulos($tamaño){
+  color: $colorTextMenus !important;
+  font-size: $tamaño !important;
+  font-family: $titlesFont !important;
+}
+@mixin fuenteMenus($tamaño){
+  color: $colorTextMenus !important;
+  font-size: $tamaño !important;
+  font-family: $menuFont !important;
+}
+@mixin fuenteTexto($tamaño){
+  color: $colorTextoPlano !important;
+  font-size: $tamaño !important;
+  font-family: $textFont !important;
+}
